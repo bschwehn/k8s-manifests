@@ -338,7 +338,7 @@ spec:
               key: auto-direct-node-routes
               name: cilium-config
               optional: true
-        image: registry.opensuse.org/devel/kubic/containers/container/kubic/cilium:1.4
+        image: registry.opensuse.org/opensuse/factory/totest/containers/kubic/cilium:1.5
         imagePullPolicy: IfNotPresent
         lifecycle:
           postStart:
@@ -425,7 +425,7 @@ spec:
               key: clean-cilium-bpf-state
               name: cilium-config
               optional: true
-        image: registry.opensuse.org/devel/kubic/containers/container/kubic/cilium-init:1.4
+        image: registry.opensuse.org/opensuse/factory/totest/containers/kubic/cilium-init:1.5
         imagePullPolicy: IfNotPresent
         name: clean-cilium-state
         securityContext:
@@ -575,7 +575,7 @@ spec:
               key: AWS_DEFAULT_REGION
               name: cilium-aws
               optional: true
-        image: registry.opensuse.org/devel/kubic/containers/container/kubic/cilium-operator:1.4
+        image: registry.opensuse.org/opensuse/factory/totest/containers/kubic/cilium-operator:1.5
         imagePullPolicy: IfNotPresent
         name: cilium-operator
         volumeMounts:
